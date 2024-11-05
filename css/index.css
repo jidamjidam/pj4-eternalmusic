@@ -1,0 +1,744 @@
+@charset "utf-8";
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  index.css +++++++++++++++++++++++++++++
+++++++++++++++++++++++  Eternal music  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+/*_*_*_*_*_* in-common(srart)_*_*_*_*_*_*_*/
+
+
+
+
+/*_*_*_*_*_* in-common(end)_*_*_*_*_*_*_*/
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  index.css +++++++++++++++++++++++++++++
+++++++++++++++++++++++  Eternal music  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/*_*_*_*_*_* mobile(start)_*_*_*_*_*_*_*/
+
+@media screen and ( max-width: 767px ) {
+
+    section.visual { width: 100vw; height: 100vh; background: url("../images/img_index_visual_bg.png") no-repeat center; background-size: cover; font-family: 'Merriweather'; }
+
+    section.visual div.inner_wrap { position: relative; width: 100vw; padding: 0 3.6458333vw; height: 100vh; margin: 0 auto; }
+    section.visual div.view_mask { overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 78.125vw; height: 100vw; margin: 0 auto; }
+    section.visual ul { width: 1000%; height: 91.145833vw; }
+    section.visual ul li { display: inline-block; width: 78.125vw; height: 92.1875vw; color: #fff; text-align: center; }
+    section.visual ul li img { width: 78.125vw; height: 78.125vw; object-fit: cover; margin-bottom: 40px; }
+    section.visual ul li p { display: inline-block; font-size: 1.25em;  }
+
+    /* pagination */
+
+    section.visual div.pagination { display: none; }
+
+
+    /* prev, next */
+
+    section.visual div.btn_prev { position: absolute; left: 5.625vw; top: 50%; transform: translateY(-60%); width: 10vw; height: 600px; }
+    section.visual div.btn_prev span { position: absolute; top: 50%; left: 0; right: 0; margin: auto; transform: translateY(-50%); width: 20vw; height: 100%; background: rgba(255, 255, 255, 0.2); clip-path: polygon(0% 100%, 24% 0%, 26% 6%, 6% 90%, 100% 90%, 100% 100%, 0% 100%); vertical-align: middle; }
+    section.visual div.btn_prev span { width: 40px; height: 10px; }
+    section.visual div.btn_prev button { width: 100%; height: 100%; }
+    section.visual div.btn_prev p { display: none; }
+
+
+    section.visual div.btn_next { position: absolute; right: 5.625vw; top: 50%; transform: translateY(-60%); width: 10vw; height: 600px; }
+    section.visual div.btn_next span { position: absolute; top: 50%; right: 0; left: 0; margin: auto; transform: translateY(-50%); width: 10vw; height: 100%; background: rgba(255, 255, 255, 0.5); clip-path: polygon(94% 90%, 74% 7%, 76% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 90%); vertical-align: middle; }
+    section.visual div.btn_next span { width: 40px; height: 10px; }
+    section.visual div.btn_next button { width: 100%; height: 100%; }
+    section.visual div.btn_next p { display: none; }
+
+    
+
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     SLOGUN    * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+
+    section.slogun { overflow: hidden; width: 100vw; padding: 100px 0 100px; margin: 0 auto; }
+
+    section.slogun h2 { position: relative; width: 80vw; text-align: center; font-family: 'Merriweather'; margin: auto; font-size: 1.125em; }
+    section.slogun h2::before { content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: block; width: 65.1041666vw; height: 46.61458633vw; background: url("../images/img_index_slogun_bg.png") no-repeat center; background-size: 100%; z-index: -1; }
+    section.slogun h2 span { font-family: 'Style Script'; font-size: 2em; }
+
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     INFO      * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+
+
+    section.info { overflow: hidden; width: 100vw; margin-bottom: 100px; }
+
+    section.info > div { width: 50vw; height: 52.08333vw; }
+
+    section.info div.manage { width: 100%; height: 52.08333vw;align-items: center;  }
+    section.info div.manage img { float: left; width: 50vw; height: 52.08333vw; object-fit: cover; }
+    section.info div.manage div.text_wrap { float: right; position: relative; text-align: center; width: 50vw; height: 52.08333vw;  }
+    section.info div.manage div.text_wrap p.title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1em; font-family: 'Roboto-Bold'; line-height: 1.2; width: 100%;  }
+    section.info div.manage div.text_wrap p.sub { display: none; }
+
+
+    section.info div.global { width: 100%; height: 52.08333vw; text-align: right; }
+    section.info div.global img { float: right; width: 50vw; height: 52.08333vw; object-fit: cover; }
+    section.info div.global div.text_wrap { float: left;  position: relative; width: 50vw; height: 52.08333vw; text-align: center; }
+    section.info div.global div.text_wrap p.title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1em; font-family: 'Roboto-Bold'; line-height: 1.2; width: 100%;  }
+    section.info div.global div.text_wrap p.sub { display: none; }
+
+
+    section.info div.product { width: 100%; height: 52.08333vw;  }
+    section.info div.product img { float: left; width: 50vw; height: 52.08333vw; object-fit: cover; }
+    section.info div.product div.text_wrap { float: right; position: relative; width: 50vw; height: 52.08333vw; text-align: center; }
+    section.info div.product p.title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1em; font-family: 'Roboto-Bold'; width: 100%; line-height: 1.2; }
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     ARTIST    * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+    section.artist_list { overflow: hidden; position: relative; width: 100vw; height: 47.8125vw; margin-bottom: 100px; }
+    section.artist_list ul { width: 478.125vw; animation: scrollText 20s linear infinite; }
+    section.artist_list ul li { display: inline-block; width: 47.8125vw; height: 47.8125vw; }
+    section.artist_list ul li img { width: 100%; height: 100%; object-fit: cover; }
+
+    @keyframes scrollText {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     NEW       * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+
+
+    section.new { overflow: hidden; position: relative; width: 100vw; padding: 0 3.6458333vw; margin-bottom: 100px; }
+    section.new h2 { font-family: 'Roboto-Bold'; font-size: 1.5em; margin-bottom: 50px; }
+    section.new div.inner_wrap { width: 100%; }
+
+    section.new .grid_wrap { display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(4, 1fr); gap: 5px; width: 100%; height: 372.1875vw;
+
+		
+		grid-template-areas:
+
+			"item_01"
+            "item_02"
+			"item_03"
+            "item_04"
+;
+
+	}
+    
+    section.new .grid_wrap .item_01 { grid-area: item_01; }
+	section.new .grid_wrap .item_02 { grid-area: item_02; }
+	section.new .grid_wrap .item_03 { grid-area: item_03; }
+	section.new .grid_wrap .item_04 { grid-area: item_04; }
+
+
+	section.new .grid_wrap > li { position: relative; }
+    section.new .grid_wrap > li > a { position: relative; display: block; width: 100%; height: 100%; }
+	section.new .grid_wrap > li > a img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    section.new li div.text_wrap { position: absolute; width: calc(100% - 40px); left: 20px; bottom: 20px; color: #fff; }
+    section.new li div.text_wrap p.cate { font-family: 'Roboto-Bold'; background: #000; width: 60px; height: 25px; margin-bottom: 5px; text-align: center; font-size: 0.875em; line-height: 1.8; }
+    section.new li div.text_wrap p.title { font-family: 'Roboto-Bold'; line-height: 1.2; }
+    section.new li div.text_wrap p.etc { display: none;}
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     LASTEST   * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+    section.lastest { overflow: hidden; position: relative; width: 100vw; padding: 0 3.6458333vw; margin-bottom: 100px; }
+    section.lastest h2 { font-family: 'Roboto-Bold'; font-size: 1.5em; padding-bottom: 3.6458333vw; margin-bottom: 50px; }
+    section.lastest div.inner_wrap { width: 100%; }
+
+    section.lastest div.contents_wrap { display: flex; flex-direction: column; width: 100%; height: 122.135416vw; }
+    section.lastest div.contents_wrap > div.play { width: 100%; height: 52.213541vw; }
+    section.lastest div.contents_wrap iframe { width: 100%; height: 100%; object-fit: cover; }
+    section.lastest div.contents_wrap > div.playlist { overflow-y: scroll; width: 100%; }
+
+    /* 스크롤바 */
+    section.lastest div.contents_wrap > div.playlist::-webkit-scrollbar {  width: 10px; }
+    section.lastest div.contents_wrap > div.playlist::-webkit-scrollbar-thumb { 
+        background-color: rgba(255, 255, 255, 0.5);   }
+    section.lastest div.contents_wrap > div.playlist::-webkit-scrollbar-track  { background-color: transparent; border: 1px solid rgba(255, 255, 255, 0.2); padding: 2px; }
+
+    section.lastest div.playlist li { padding: 10px 0; width: 100%; height: 80px; }
+    section.lastest div.playlist li > a { overflow: hidden; position:relative; display: flex; padding: 10px 0; width: 100%; height: 100%; align-items: center }
+    section.lastest div.playlist li img { margin-left: 5.625vw; width: 31.25vw; height: 15.625vw; object-fit: cover; border-radius: 5px; }
+    section.lastest div.playlist li div { display: flex; width: 60vw; display: inline-block; padding: 5px 20px;  }
+    section.lastest div.playlist li div p.name { font-size: 1em; width: 100%; font-family: 'Roboto-Bold'; text-overflow: ellipsis;  overflow: hidden;  white-space: nowrap; }
+    section.lastest div.playlist li div p.artist { margin: 5px 0; color: rgba(255, 255, 255, 0.5); text-overflow: ellipsis;  overflow: hidden;  white-space: nowrap; }
+    section.lastest div.playlist li div p.info { display: none; }
+    section.lastest div.playlist li.active { background: rgba(255, 255, 255, 0.2); }
+
+
+
+   
+  
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     ETC       * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+    section.etc { overflow: hidden; position: relative; width: 100vw; }
+
+    section.etc img { display: none; }
+
+    section.etc > div { position: relative; width: 100vw; height: 39.0625vw; }
+
+    section.etc > div > div.text_wrap { text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;  }
+    section.etc > div > div.text_wrap > p { font-size: 1.5em; font-family: 'Roboto-Bold'; }
+    section.etc button { padding-right: 20px; position: relative;  color: #fff; font-size: 0.8125em;  }
+    section.etc div.text_wrap > button::after { content: ""; position: absolute; right: 0; top: 0; display: block; width: 7px; height: 14px; background: #fff; clip-path: polygon(20% 0, 100% 50%, 20% 100%, 0% 100%, 80% 50%, 0% 0%); }
+
+    section.etc > div.aud { background: url("../images/img_index_etc_bg_01_D.jpg") no-repeat center; background-size: 100%; }
+
+    section.etc > div.rec { background: url("../images/img_index_etc_bg_02_D.jpg") no-repeat center; background-size: 100%; }
+
+    section.etc > div.cont { background: url("../images/img_index_etc_bg_03_D.jpg") no-repeat center; background-size: 100%; }
+
+    
+}
+
+
+
+/*_*_*_*_*_* mobile(end)_*_*_*_*_*_*_*/
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  index.css +++++++++++++++++++++++++++++
+++++++++++++++++++++++  Eternal music  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+/*_*_*_*_*_* tablet(start)_*_*_*_*_*_*_*/
+
+@media screen and ( min-width: 768px ) and ( max-width: 1024px ) {
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     VISUAL    * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+
+    section.visual { width: 100vw; height: 100vh; background: url("../images/img_index_visual_bg.png") no-repeat center; background-size: cover; font-family: 'Merriweather'; }
+
+    section.visual div.inner_wrap { position: relative; width: 100vw; padding: 0 3.6458333vw; height: 100vh; margin: 0 auto; }
+    section.visual div.view_mask { overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 78.125vw; margin: 0 auto; }
+    section.visual ul { width: 1000%; height: 91.145833vw; }
+    section.visual ul li { display: inline-block; width: 60vw; color: #fff; text-align: center; }
+    section.visual ul li img { width: 60vw; object-fit: cover; }
+    section.visual ul li p { display: inline-block; font-size: 2.25em; padding-top: 40px; }
+
+    /* pagination */
+
+
+    section.visual div.pagination { position: absolute; bottom: 5vw; width: 94.791666vw; padding: 0 8vw; text-align: center; }
+    section.visual div.pagination button { color: rgba(255, 255, 255, 0.5); font-family: 'Merriweather'; font-size: 1.25em; padding: 5px 30px; text-align: center; }
+    section.visual div.pagination button:hover { color: rgba(255, 255, 255, 1); }
+    section.visual div.pagination button.active { color: rgba(255, 255, 255, 1); }
+
+
+    /* prev, next */
+
+    section.visual div.btn_prev { position: absolute; left: 0; top: 50%; transform: translateY(-60%); width: 20vw; height: 600px; }
+    section.visual div.btn_prev span { position: absolute; top: 50%; left: 0; right: 0; margin: auto; transform: translateY(-50%); width: 20vw; height: 100%; background: rgba(255, 255, 255, 0.2); clip-path: polygon(0% 100%, 24% 0%, 26% 6%, 6% 90%, 100% 90%, 100% 100%, 0% 100%); vertical-align: middle; }
+    section.visual div.btn_prev span { width: 100px; height: 20px; }
+    section.visual div.btn_prev button { width: 100%; height: 100%; }
+    section.visual div.btn_prev p { position: absolute; top: 50%; transform: translateY(80%); width: 100%; text-align: center; color: rgba(255, 255, 255, 0.2); }
+
+
+    section.visual div.btn_next { position: absolute; right: 0; top: 50%; transform: translateY(-60%); width: 20vw; height: 600px; }
+    section.visual div.btn_next span { position: absolute; top: 50%; right: 0; left: 0; margin: auto; transform: translateY(-50%); width: 10vw; height: 100%; background: rgba(255, 255, 255, 0.2); clip-path: polygon(94% 90%, 74% 7%, 76% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 90%); vertical-align: middle; }
+    section.visual div.btn_next span { width: 100px; height: 20px; }
+    section.visual div.btn_next button { width: 100%; height: 100%; }
+    section.visual div.btn_next p { position: absolute; top: 50%; transform: translateY(80%); width: 100%; text-align: center; color: rgba(255, 255, 255, 0.2); }
+
+    
+
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     SLOGUN    * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+
+    section.slogun { overflow: hidden; width: 100vw; padding: 150px 0 150px; margin: 0 auto; }
+
+    section.slogun h2 { position: relative; width: 80vw; text-align: center; font-family: 'Merriweather'; margin: auto; font-size: 2.5em; }
+    section.slogun h2::before { content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: block; width: 65.1041666vw; height: 46.61458633vw; background: url("../images/img_index_slogun_bg.png") no-repeat center; background-size: 100%; z-index: -1; }
+    section.slogun h2 span { font-family: 'Style Script'; font-size: 2.5em; }
+
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     INFO      * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+
+
+    section.info { overflow: hidden; width: 100vw; margin-bottom: 150px; }
+
+    section.info > div { width: 50vw; height: 52.08333vw; }
+
+    section.info div.manage { width: 100%; height: 52.08333vw;align-items: center;  }
+    section.info div.manage img { float: left; width: 50vw; height: 52.08333vw; object-fit: cover; }
+    section.info div.manage div.text_wrap { float: right; position: relative; text-align: center; width: 50vw; height: 52.08333vw;  }
+    section.info div.manage div.text_wrap p.title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2em; font-family: 'Roboto-Bold'; line-height: 1.2; width: 100%;  }
+    section.info div.manage div.text_wrap p.sub { display: none; }
+
+
+    section.info div.global { width: 100%; height: 52.08333vw; text-align: right; }
+    section.info div.global img { float: right; width: 50vw; height: 52.08333vw; object-fit: cover; }
+    section.info div.global div.text_wrap { float: left;  position: relative; width: 50vw; height: 52.08333vw; text-align: center; }
+    section.info div.global div.text_wrap p.title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2em; font-family: 'Roboto-Bold'; line-height: 1.2; width: 100%;  }
+    section.info div.global div.text_wrap p.sub { display: none; }
+
+
+    section.info div.product { width: 100%; height: 52.08333vw;  }
+    section.info div.product img { float: left; width: 50vw; height: 52.08333vw; object-fit: cover; }
+    section.info div.product div.text_wrap { float: right; position: relative; width: 50vw; height: 52.08333vw; text-align: center; }
+    section.info div.product p.title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2em; font-family: 'Roboto-Bold'; width: 100%; line-height: 1.2; }
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     ARTIST    * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+    section.artist_list { overflow: hidden; position: relative; width: 100vw; height: 39.0625vw; margin-bottom: 150px; }
+    section.artist_list ul { width: 390.625vw; animation: scrollText 20s linear infinite;  }
+    section.artist_list ul li { display: inline-block; }
+    section.artist_list ul li img { width: 100%; height: 100%; object-fit: cover; }
+
+    @keyframes scrollText {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     NEW       * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+
+
+    section.new { overflow: hidden; position: relative; width: 100vw; padding: 0 3.6458333vw; margin-bottom: 100px; }
+    section.new h2 { font-family: 'Roboto-Bold'; font-size: 2.5em; margin-bottom: 70px; }
+    section.new div.inner_wrap { width: 100%; }
+
+    section.new .grid_wrap { display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 1fr); gap: 5px; width: 100%; height: 201.5625vw;
+
+		
+		grid-template-areas:
+
+			"item_01 item_01"
+            "item_02 item_02"
+			"item_03 item_04"
+;
+
+	}
+    
+    section.new .grid_wrap .item_01 { grid-area: item_01; }
+	section.new .grid_wrap .item_02 { grid-area: item_02; }
+	section.new .grid_wrap .item_03 { grid-area: item_03; }
+	section.new .grid_wrap .item_04 { grid-area: item_04; }
+
+
+	section.new .grid_wrap > li { position: relative; }
+    section.new .grid_wrap > li > a { position: relative; display: block; width: 100%; height: 100%; }
+	section.new .grid_wrap > li > a img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    section.new li div.text_wrap { position: absolute; width: calc(100% - 40px); left: 20px; bottom: 20px; color: #fff; }
+    section.new li div.text_wrap p.cate { font-family: 'Roboto-Bold'; background: #000; width: 70px; height: 30px; margin-bottom: 8px; text-align: center; line-height: 1.8; }
+    section.new li div.text_wrap p.title { font-family: 'Roboto-Bold'; font-size: 1.625em; line-height: 1.2; }
+    section.new li div.text_wrap p.etc { margin-top: 8px; }
+    section.new li div.text_wrap p.etc span { position: relative;margin-left: 30px; }
+    section.new li div.text_wrap p.etc span::before { content: ""; position: absolute; top: 50%; left: -18px; transform: translateY(-50%);display: block; background: #fff; width: 6px; height: 6px; border-radius: 99999999px; }
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     LASTEST   * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+    section.lastest { overflow: hidden; position: relative; width: 100vw; padding: 0 3.6458333vw; margin-bottom: 100px; }
+    section.lastest h2 { font-family: 'Roboto-Bold'; font-size: 2.5em; margin-bottom: 70px; }
+    section.lastest div.inner_wrap { width: 100%; }
+
+    section.lastest div.contents_wrap { display: flex; flex-direction: column; width: 100%; height: 122.135416vw; }
+    section.lastest div.contents_wrap > div.play { width: 100%; height: 52.213541vw; }
+    section.lastest div.contents_wrap iframe { width: 100%; height: 100%; object-fit: cover; }
+    section.lastest div.contents_wrap > div.playlist { overflow-y: scroll; width: 100%; }
+
+    /* 스크롤바 */
+    section.lastest div.contents_wrap > div.playlist::-webkit-scrollbar {  width: 18px; }
+    section.lastest div.contents_wrap > div.playlist::-webkit-scrollbar-thumb { 
+        background-color: rgba(255, 255, 255, 0.5);   }
+    section.lastest div.contents_wrap > div.playlist::-webkit-scrollbar-track  { background-color: transparent; border: 1px solid rgba(255, 255, 255, 0.2); padding: 2px; }
+
+    section.lastest div.playlist li { padding: 10px 0; width: 100%; height: 120px; }
+    section.lastest div.playlist li > a { position:relative; display: flex; padding: 10px 0; width: 100%; height: 100%; align-items: center }
+    section.lastest div.playlist li img { margin-left: 30px; width: 7.5vw; height: 4.21875vw; object-fit: cover; border-radius: 8px; }
+    section.lastest div.playlist li div { display: flex; width: 100%; display: inline-block; padding: 10px 30px; text-overflow: ellipsis;  word-break: break-word; }
+    section.lastest div.playlist li div p.name { font-size: 1.125em; font-family: 'Roboto-Bold';  }
+    section.lastest div.playlist li div p.artist { margin: 5px 0; color: rgba(255, 255, 255, 0.5); }
+    section.lastest div.playlist li div p.info { color: rgba(255, 255, 255, 0.5); }
+    section.lastest div.playlist li.active { background: rgba(255, 255, 255, 0.2); }
+    section.lastest div.playlist li.active a::before { content:''; display: block; position: absolute; left: 1.30208vw; top: 50%; transform: translateY(-50%) rotate(270deg); width: 16px; height: 12px; background:#fff; clip-path: polygon(50% 100%, 0 0, 100% 0); } 
+
+
+   
+  
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     ETC       * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+    section.etc { overflow: hidden; position: relative; width: 100vw;  }
+
+    section.etc img { display: none; }
+
+    section.etc > div { position: relative; width: 100vw; height: 39.0625vw; }
+
+    section.etc > div > div.text_wrap { text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;  }
+    section.etc > div > div.text_wrap > p { font-size: 2.25em; margin-bottom: 10px; font-family: 'Roboto-Bold'; }
+    section.etc button { padding-right: 30px; position: relative;  color: #fff;  }
+    section.etc div.text_wrap > button::after { content: ""; position: absolute; right: 0; top: 0; display: block; width: 10px; height: 18px; background: #fff; clip-path: polygon(20% 0, 100% 50%, 20% 100%, 0% 100%, 80% 50%, 0% 0%); }
+
+    section.etc > div.aud { background: url("../images/img_index_etc_bg_01_D.jpg") no-repeat center; background-size: 100%; }
+
+    section.etc > div.rec { background: url("../images/img_index_etc_bg_02_D.jpg") no-repeat center; background-size: 100%; }
+
+    section.etc > div.cont { background: url("../images/img_index_etc_bg_03_D.jpg") no-repeat center; background-size: 100%; }
+
+    
+
+
+
+}
+
+
+/*_*_*_*_*_* tablet(end)_*_*_*_*_*_*_*/
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  index.css +++++++++++++++++++++++++++++
+++++++++++++++++++++++  Eternal music  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+/*_*_*_*_*_* desktop(start)_*_*_*_*_*_*_*/
+
+@media screen and ( min-width: 1025px ) {
+
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     VISUAL    * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+    section.visual { width: 100vw; height: 100vh; background: url("../images/img_index_visual_bg.png") no-repeat center; background-size: cover; font-family: 'Merriweather'; }
+
+    section.visual div.inner_wrap { position: absolute; top: 50%; transform: translateY(-50%); width: 100vw; height: 40vw; padding: 0 10vw; margin: 0 auto; }
+    section.visual div.view_mask { overflow: hidden; position: relative; width: 40.9895833vw; margin: 0 auto; }
+    /*section.visual ul { width: 740vw; height: 31.25vw;  }
+    section.visual ul li { display: inline-block; width: 49vw; height: 31.25vw; }
+    section.visual ul li + li { margin-left: 25vw; }
+    section.visual ul li img { display: inline-block; width: 30vw; height: 30vw; object-fit: cover; }
+    section.visual ul li p { display: inline-block; font-size: 1.458333vw; line-height: 31.25vw;  }*/
+
+    section.visual ul { width: 1000% }
+    section.visual ul > li { float: left; width: 10%; }
+    section.visual ul > li > a { overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; width: 100%; }
+    section.visual ul > li > a > img { flex: 1; height: 30vw; }
+    section.visual ul > li > a > p { flex: 1; color: #fff; font-size: 1.458333vw; }
+
+    /* pagination */
+
+    section.visual div.pagination { position: absolute; bottom: 0; width: 80vw; padding: 0 8vw; text-align: center; }
+    section.visual div.pagination button { color: rgba(255, 255, 255, 0.5); font-family: 'Merriweather'; font-size: 1.5em; padding: 5px 30px; text-align: center; }
+    section.visual div.pagination button:hover { color: rgba(255, 255, 255, 1); }
+    section.visual div.pagination button.active { color: rgba(255, 255, 255, 1); }
+
+    /* prev, next */
+
+    section.visual div.btn_prev { position: absolute; left: 15vw; top: 50%; transform: translateY(-60%); width: 200px; height: 600px; }
+    section.visual div.btn_prev span { position: absolute; top: 50%; left: 0; right: 0; margin: auto; transform: translateY(-50%); width: 10vw; height: 100%; background: rgba(255, 255, 255, 0.2); clip-path: polygon(0% 100%, 24% 0%, 26% 6%, 6% 90%, 100% 90%, 100% 100%, 0% 100%); vertical-align: middle; }
+    section.visual div.btn_prev span { width: 100px; height: 20px; }
+    section.visual div.btn_prev button { width: 100%; height: 100%; }
+    section.visual div.btn_prev p { position: absolute; top: 50%; transform: translateY(80%); width: 100%; text-align: center; color: rgba(255, 255, 255, 0.2); }
+    section.visual div.btn_prev:hover span { background: rgba(255, 255, 255, 0.5); }
+    section.visual div.btn_prev:hover p { color: rgba(255, 255, 255, 0.9); filter: drop-shadow(0 0 5px grey)
+        drop-shadow(0 0 10px grey)
+        drop-shadow(0 0 20px grey); transition: filter 0.1s; }
+    
+
+    section.visual div.btn_next { position: absolute; right: 15vw; top: 50%; transform: translateY(-60%); width: 200px; height: 600px; }
+    section.visual div.btn_next span { position: absolute; top: 50%; right: 0; left: 0; margin: auto; transform: translateY(-50%); width: 10vw; height: 100%; background: rgba(255, 255, 255, 0.2); clip-path: polygon(94% 90%, 74% 7%, 76% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 90%); vertical-align: middle; }
+    section.visual div.btn_next span { width: 100px; height: 20px; }
+    section.visual div.btn_next button { width: 100%; height: 100%; }
+    section.visual div.btn_next p { position: absolute; top: 50%; transform: translateY(80%); width: 100%; text-align: center; width: 100%; text-align: center; color: rgba(255, 255, 255, 0.2); }
+    section.visual div.btn_next:hover span { background: rgba(255, 255, 255, 0.5); 
+        -webkit-box-shadow: 0px 0px 20px 0px #000000; 
+     box-shadow: 0px 5px 25px rgba(0, 0, 0,0.25); }
+    section.visual div.btn_next:hover p { color: rgba(255, 255, 255, 0.9); filter: drop-shadow(0 0 5px grey)
+        drop-shadow(0 0 10px grey)
+        drop-shadow(0 0 20px grey); transition: filter 0.1s; }
+    
+
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     SLOGUN    * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+
+    section.slogun { overflow: hidden; width: 100vw; padding: 200px 0 200px; margin: 0 auto; }
+
+    section.slogun h2 { position: relative; width: 80vw; text-align: center; font-family: 'Merriweather'; margin: auto; font-size: 2.5em; }
+    section.slogun h2::before { content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: block; width: 26.04166vw; height: 18.6979166vw; background: url("../images/img_index_slogun_bg.png") no-repeat center; background-size: 100%; z-index: -1;  }
+    section.slogun h2 span { font-family: 'Style Script'; font-size: 2.5em; }
+
+
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     INFO      * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+    section.info { overflow: hidden; position: relative; width: 100vw; height: 85.7291667vw; margin-bottom: 150px; }
+
+    section.info > div { display: flex; align-items: center; }
+
+    section.info div.manage { display: flex; align-items: center; width: 79.791666vw; height: 26.041666vw; }
+    section.info div.manage img {  width: 50vw; height: 26.041666vw; object-fit: cover; }
+    section.info div.manage div.text_wrap {  width: 29.791666vw; padding: 1.5625vw;  }
+    section.info div.manage div.text_wrap p.title { font-size: 2em; font-family: 'Roboto-Bold'; line-height: 1.2; margin-bottom: 20px; }
+    section.info div.manage div.text_wrap p.sub { font-family: 'Merriweather'; line-height: 1.5;  }
+
+
+    section.info div.global { position: absolute; right: 10vw; transform: translateY(-4.16666vw);  width: 53.9679vw; height: 31.25vw; flex-direction: row-reverse; text-align: right; }
+    section.info div.global img { position: relative; width: 26.041666vw; height: 31.25vw; object-fit: cover; }
+    section.info div.global div.text_wrap {  width: 29.791666vw; padding: 1.5625vw;  }
+    section.info div.global div.text_wrap p.title { font-size: 2em; font-family: 'Roboto-Bold'; line-height: 1.2; margin-bottom: 20px; }
+    section.info div.global div.text_wrap p.sub { font-family: 'Merriweather'; line-height: 1.5;  }
+
+
+    section.info div.product { position: absolute; top: 52.083333vw; left: 20vw; width: 26.041666vw; height: 33.645833vw; flex-direction: column; justify-content: center; }
+    section.info div.product img { position: relative; width: 26.041666vw; height: 26.041666vw; object-fit: cover; }
+    section.info div.product div.text_wrap { width: 26.041666vw; height: 7.604167vw; padding: 1.5625vw; text-align: center; }
+    section.info div.product p.title { font-size: 2em; font-family: 'Roboto-Bold'; line-height: 1.2;  }
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     ARTIST    * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+
+    section.artist_list { overflow: hidden; position: relative; width: 100vw; height: 16.66vw; margin-bottom: 150px; white-space: nowrap; }
+    section.artist_list ul { display: inline-block; width: 166.66vw; white-space: nowrap; animation: scrollText 20s linear infinite; transition: transform 0.3s ease; }
+    section.artist_list ul li { display: inline-block; width: 10%; }
+    section.artist_list ul li img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); }
+    section.artist_list ul li:hover img { filter: grayscale(0%); transition: filter 0.3s; }
+
+    @keyframes scrollText {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     NEW       * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+
+
+    section.new { overflow: hidden; position: relative; width: 100vw; padding: 0 10vw; margin-bottom: 150px; }
+    section.new h2 { font-family: 'Roboto-Bold'; font-size: 2.5em; margin-bottom: 70px; }
+    section.new div.inner_wrap { width: 100%; }
+
+    section.new .grid_wrap { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr); gap: 5px; width: 100%; height: 39.84375vw;
+
+		
+		grid-template-areas:
+
+			"item_01 item_01 item_02 item_02"
+			"item_01 item_01 item_03 item_04"
+;
+
+	}
+    
+    section.new .grid_wrap .item_01 { grid-area: item_01; }
+	section.new .grid_wrap .item_02 { grid-area: item_02; }
+	section.new .grid_wrap .item_03 { grid-area: item_03; }
+	section.new .grid_wrap .item_04 { grid-area: item_04; }
+
+
+	section.new .grid_wrap > li { overflow: hidden; position: relative; }
+    section.new .grid_wrap > li > a { position: relative; display: block; width: 100%; height: 100%; }
+	section.new .grid_wrap > li > a img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    section.new .grid_wrap > li:hover img { transform: scale(1.1); transition: transform 0.3s; }
+    section.new li div.text_wrap { position: absolute; width: calc(100% - 40px); left: 20px; bottom: 20px; color: #fff; }
+    section.new li div.text_wrap p.cate { font-family: 'Roboto-Bold'; background: #000; width: 70px; height: 30px; margin-bottom: 8px; text-align: center; line-height: 1.8; }
+    section.new li div.text_wrap p.title { font-family: 'Roboto-Bold'; font-size: 1.625em; line-height: 1.2; }
+    section.new .grid_wrap > li:hover p.title { text-decoration: underline; }
+
+    section.new li div.text_wrap p.etc { margin-top: 8px; }
+    section.new li div.text_wrap p.etc span { position: relative;margin-left: 30px; }
+    section.new li div.text_wrap p.etc span::before { content: ""; position: absolute; top: 50%; left: -18px; transform: translateY(-50%);display: block; background: #fff; width: 6px; height: 6px; border-radius: 99999999px; }
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     LASTEST   * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+    section.lastest { overflow: hidden; position: relative; width: 100vw; padding: 0 10vw; margin-bottom: 150px; }
+    section.lastest h2 { font-family: 'Roboto-Bold'; font-size: 2.5em; margin-bottom: 70px; }
+    section.lastest div.inner_wrap { width: 100%; }
+
+    section.lastest div.contents_wrap { display: flex; width: 100%; height: 495px; }
+    section.lastest div.contents_wrap > div.play { width: 45.833333vw; }
+    section.lastest div.contents_wrap iframe { width: 100%; height: 100%; object-fit: cover; }
+    section.lastest div.contents_wrap > div.playlist { overflow-y: scroll; width: calc(100% - 45.833333vw); }
+
+    /* 스크롤바 */
+    section.lastest div.contents_wrap > div.playlist::-webkit-scrollbar {  width: 18px; }
+    section.lastest div.contents_wrap > div.playlist::-webkit-scrollbar-thumb { 
+        background-color: rgba(255, 255, 255, 0.5);   }
+    section.lastest div.contents_wrap > div.playlist::-webkit-scrollbar-track  { background-color: transparent; border: 1px solid rgba(255, 255, 255, 0.2); padding: 2px; }
+
+    section.lastest div.playlist li { padding: 10px 0; width: 100%; height: 120px; }
+    section.lastest div.playlist li > a { position:relative; display: flex; padding: 10px 0; width: 100%; height: 100%; align-items: center }
+    section.lastest div.playlist li img { margin-left: 50px; width: 7.5vw; height: 4.21875vw; object-fit: cover; border-radius: 8px; }
+    section.lastest div.playlist li div { display: flex; width: 100%; display: inline-block; padding: 10px 30px; text-overflow: ellipsis;  word-break: break-word; }
+    section.lastest div.playlist li div p.name { font-size: 1.125em; font-family: 'Roboto-Bold';  }
+    section.lastest div.playlist li div p.artist { margin: 5px 0; color: rgba(255, 255, 255, 0.5); }
+    section.lastest div.playlist li div p.info { color: rgba(255, 255, 255, 0.5); }
+    section.lastest div.playlist li:hover { background: rgba(255, 255, 255, 0.2); }
+    section.lastest div.playlist li:hover a::before { content:''; display: block; position: absolute; left: 1.30208vw; top: 50%; transform: translateY(-50%) rotate(270deg); width: 16px; height: 12px; background:#fff; clip-path: polygon(50% 100%, 0 0, 100% 0); }
+    section.lastest div.playlist li:hover p.name { text-decoration: underline; }
+    section.lastest div.playlist li.active { background: rgba(255, 255, 255, 0.2); }
+    section.lastest div.playlist li.active a::before { content:''; display: block; position: absolute; left: 1.30208vw; top: 50%; transform: translateY(-50%) rotate(270deg); width: 16px; height: 12px; background:#fff; clip-path: polygon(50% 100%, 0 0, 100% 0); }
+
+
+   
+  
+
+
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * *     ETC       * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+    /* * * * * * * * * * * * * * * * * * */
+
+    section.etc { overflow: hidden; position: relative; width: 100vw; height: 52.08333vw;  }
+
+    section.etc img.audition { position: absolute; width: 100vw; height: 52.08333vw; object-fit: cover; z-index: -1; transition: opacity 0.2s ease-in-out; opacity: 1; }
+
+    section.etc div { text-align: center; }
+    section.etc div.aud { float: left; position:relative; width: 50vw; height: 52.08333vw; line-height: 52.08333vw; }
+    section.etc div.aud::after { content: ""; position: absolute; top: 50%; left: 100%; background: rgba(255, 255, 255, 0.5); display : block; width: 99999999999px; height: 0.15625vw;  } 
+    section.etc div.aud::before { content: ""; position: absolute; top: 0; left: 100%; background: rgba(255, 255, 255, 0.5); display : block; width: 0.15625vw; height: 999999999999px;  } 
+    section.etc div.rec { float: right; position:relative; width: 50vw; height: 26.041665vw; line-height: 26.041665vw; }
+    section.etc div.cont { float: left; position:relative; width: 50%; height: 26.041665vw; line-height: 26.041665vw; }
+    section.etc div.text_wrap { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;  }
+    section.etc div.text_wrap p { display: inline-block; font-family: 'Roboto-Bold'; font-size: 3.75em; margin-bottom: 100px; filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); }
+    section.etc div.text_wrap > button { position: absolute; top: 50%; left: 50%; transform: translateX(-50%); display: inline-block; color: #fff; font-size: 1.125em;  padding-right: 30px; text-align: center; filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); }
+    section.etc div.text_wrap > button::after { content: ""; position: absolute; right: 0; top: 0; display: block; width: 12px; height: 20px; background: #fff; clip-path: polygon(20% 0, 100% 50%, 20% 100%, 0% 100%, 80% 50%, 0% 0%); }
+    
+}
+
+
+/*_*_*_*_*_* desktop(end)_*_*_*_*_*_*_*/
